@@ -1,0 +1,674 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+.App-header {
+  background-color: #FFFFFF;
+  /* min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white; */
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.heroImage {
+  position: absolute;
+  top: 100px;
+  z-index: -1;
+}
+
+.actionItem:hover{
+  cursor: pointer;
+  background-color: #e6ebec;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.actionItems{
+  padding: 50px 100px;
+  width: auto !important;
+}
+
+.headerActions{
+  padding: 50px 100px;
+  width: auto !important;
+  align-items: center;
+}
+
+.actionItem {
+  width: auto;
+  color: #00000A;
+  /* font-family: Basis Grotesque; */
+  font-weight: 400;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-align: right;  
+  padding: 8px;
+}
+
+.logo {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-align: right;
+  padding: 8px;
+  width: auto;
+}
+
+.subscription {
+  color: #EE5F40;
+  /* font-family: IBM Plex Sans; */
+  font-weight: 500;
+  font-size: 64px;
+  /* line-height: 108px; */
+  letter-spacing: -2px;
+  text-align: left;
+  width: 25%;
+  padding: 50px 0 0 100px;
+  margin: 0;
+}
+
+.logInButton{
+  border-radius: 4px;
+  background: #420092 !important;
+  border: 2px solid #3A008C;
+  height: 50%;
+  /* align-self: center; */
+}
+
+.logInButtonLabel{
+  color: #FFFFFF;
+  /* font-family: Basis Grotesque; */
+  font-weight: 600;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-align: right;
+  /* padding: 0; */
+  text-transform: capitalize;
+}
+
+.scheduleDemoLabel {
+  color: #3A008C;
+  /* font-family: Basis Grotesque; */
+  /* font-weight: 600; */
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-align: right;
+  text-transform: capitalize;
+}
+
+.business {
+  color: #030343;
+  /* font-family: IBM Plex Sans; */
+  font-weight: 500;
+  font-size: 64px;
+  /* line-height: 108px; */
+  letter-spacing: -2px;
+  text-align: left;
+  padding: 0 0 50px 100px;
+  margin: 0;
+  width: 40%;
+  white-space: pre;
+}
+
+.subText {
+  color: #030343;
+  /* font-family: IBM Plex Sans; */
+  font-weight: 400;
+  font-size: 24px;
+  /* line-height: 54px; */
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 0 0 0 100px;
+  margin: 0;
+  white-space: pre;
+}
+
+.buttons {
+  padding: 50px 0 0 100px;
+}
+
+.getButton {
+  border-radius: 8px;
+  background: linear-gradient(-107.11deg, #4300A3 0%, #6100BB 100%);
+  box-shadow: 0px 4px 20px 0px #000430;
+}
+
+.getButtonLabel {
+  color: #ffffff;
+  text-transform: capitalize;
+  /* font-family: Basis Grotesque; */
+  font-weight: medium;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 8px;
+}
+
+.signUpButton {
+  border-radius: 8px;
+  background: #ffffff !important;
+  border: 2px solid #000000;
+}
+
+.signupButtonLabel {
+  color: #000000;
+  text-transform: capitalize;
+  /* font-family: Basis Grotesque; */
+  font-weight: medium;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 8px;
+}
+
+.trustedText {
+  font-size: 24px;
+  /* line-height: 54px; */
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 50px 0 0 100px;
+  margin: 0;
+  white-space: pre;
+  opacity: 0.6681082844734192;
+  color: #1D0046;
+  /* font-family: SF Pro Text; */
+  font-weight: 500;
+  /* line-height: 48px; */  
+}
+
+.icons {
+  padding: 25px 0 0 100px;
+  width: 30% !important;
+}
+
+.icon {
+  width: 100%;
+}
+
+.section2 {
+  padding: 200px 0 0 100px;
+}
+
+.subsection1 {
+  padding-top: 48px;
+  width: 30% !important;
+}
+
+.subsection2 {
+  width: 60% !important;
+}
+
+.box {
+  border-radius: 8px;
+  background: #FFFFFF;
+  box-shadow: 14px -2px 160px 24px #E3E3E3;
+  width: 25% !important;
+  padding: 40px;
+  height: 80%;
+}
+
+.block {
+  width: 24px !important;
+  height: 10px !important;
+  background-color: #FF7846;
+  align-self: center;
+}
+
+.challengeText {
+  color: #232323;
+  /* font-family: IBM Plex Sans; */
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 88px;
+  letter-spacing: -1.29px;
+  text-align: left;
+  white-space: pre;
+  margin: 0;
+}
+
+.deployText {
+  color: #FF7846;
+  /* font-family: IBM Plex Sans; */
+  font-weight: bold;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: 10px;
+  text-align: center;
+  margin: 0;
+  padding-left: 16px;
+}
+
+.rollText {
+  color: #8150C7;
+  /* font-family: IBM Plex Sans; */
+  font-weight: 500;
+  font-size: 32px;
+  /* line-height: 54px; */
+  letter-spacing: 0px;
+  text-align: center;
+  align-self: flex-start;
+  margin: 0;
+}
+
+.newPricingIcon {
+  align-self: flex-end;
+  /* padding: 32px 32px 0 32px; */
+}
+
+.newPricingLabel {
+  font-size: 32px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.boxDescriptionText {
+  white-space: pre;
+}
+
+.boxSubmit {
+  align-self: flex-start;
+}
+
+.boxSubmitLabel {  
+  color: #120EF0;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0px;  
+}
+
+.sbSectionImage {
+  width: 100%;
+  text-align: center;
+}
+
+.rotate {
+  transform: rotateX(45deg);
+}
+
+.arrowButton {
+  border-radius: 200px !important;
+  background: #FFFFFF !important;
+  align-self: center;
+}
+
+.arrowButton:hover {
+  border-radius: 200px !important;
+  background: #909090 !important;
+  align-self: center;
+}
+
+.arrowButtonLabel {
+  font-size: 32px;
+  color: #909090;
+}
+
+.arrowButtonLabel:hover {
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+.middleBox {
+  height: 65%;
+}
+
+.section2Text {
+  color: #64648C;
+  /* font-family: SF Pro Text; */
+  font-weight: 400;
+  font-size: 24px;
+  /* line-height: 48px; */
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.noTopPadding {
+  padding-top: 32px;
+}
+
+.section3HeaderText {
+  color: #120EF0;
+  /* font-family: IBM Plex Sans; */
+  font-weight: 500;
+  /* font-size: 24px; */
+  /* line-height: normal;
+  letter-spacing: 0px; */
+  text-align: left;
+  white-space: pre;
+  height: 100%;
+  margin: 0;
+  width: 20%;
+  padding-left: 40px;
+  /* padding-bottom: 32px; */
+}
+
+.section3subsection2 {
+  width: 60% !important;
+  padding-left: 64px;
+}
+
+.headerTextContainer {
+  border-bottom: 1px solid #D6D5D5;
+}
+
+.selected {
+  border-bottom: 1px solid #120EF0;
+}
+
+.section3HeaderText:hover {
+  cursor: pointer;
+}
+
+.automationBox {
+  width: 70% !important;
+}
+
+.automationImage {
+  width: 70%;
+}
+
+.automationDescriptionBox {
+  border-radius: 8px;
+  /* background: #FFFFFF; */
+  /* box-shadow: 14px -2px 160px 24px #E3E3E3; */
+  width: 30% !important;
+  padding: 40px;
+  height: 100%;
+}
+
+.automateText{
+  white-space: pre;
+  font-size: 24px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.automationDescriptionText {
+  white-space: pre;
+  color: #64648C;
+  /* font-family: SF Pro Text; */
+  font-weight: 400;
+  font-size: 24px;
+  /* line-height: 48px; */
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.thirdSectionSubs{
+  padding-top: 150px;;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.itemsContainer {
+  width: 100%;
+}
+
+.Items{
+  padding-top: 100px;
+  /* padding-left: 524px; */
+  color: #00000A;
+  /* font-family: IBM Plex Sans; */
+  font-weight: medium;
+  font-size: 22px;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.forthSection{  
+  margin: 50px 0 0 500px;
+  padding: 48px;
+  align-self: center;
+  width: 60% !important;
+  /* height: 300px; */
+  border-radius: 28px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 16px 2px #727171;
+}
+
+.forthSection h2{
+  top: 0px;
+  /* padding-left: 200px; */
+  color: #5C07D1;
+  /* font-family: IBM Plex Sans; */
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.26;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.forthSection test{
+  background: #F7B500;
+  padding-left: 130px;
+}
+.forthSectionDescription{
+  /* padding-left: 200px; */
+  color: #64648C;
+  /* font-family: IBM Plex Sans; */
+  font-weight: regular;
+  font-size: 16px;
+  line-height: 1.55;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.forthSection h5{
+  padding-left: 200px;
+  color: #120EF0;
+  /* font-family: IBM Plex Sans; */
+  font-weight: medium;
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: -1px;
+  text-align: left;
+  height: 100%;
+}
+
+h6{
+  padding-top: 340px;
+  padding-left: 340px;
+  color: #FF7846;
+  /* font-family: IBM Plex Sans; */
+  font-weight: bold;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: 10px;
+  text-align: left;
+}
+
+.LastSection{
+  justify-content: space-between;
+  background: #F3EFFF;
+  /* width: 100%; */
+  height: 270px;
+  padding: 50px 200px;
+}
+
+.LastSection h1{
+  /* padding-top: 70px; */
+  /* padding-left: 240px; */
+  color: #00000A; 
+  /* font-family: SF Pro Display; */
+  font-weight: bold;
+  font-size: 54px;
+  /* line-height: 40px; */
+  letter-spacing: -2px;
+  /*text-align: left;*/
+  margin: 0;
+}
+
+.spentime{
+  /* padding-bottom: 718px; */
+  /* padding-left: 240px; */
+  color: #00000A;
+  /* font-family: IBM Plex Sans; */
+  font-weight: SemiBold;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: -2px;
+  text-align: left;
+}
+
+/*.LastSection .Lastbutton .Demo{
+  
+ 
+  border-radius: 8px;
+background: #500AD2,linear-gradient(180deg, #FFFFFF 0%, #000000 100%);
+box-shadow: 0px 24px 42px 0px #000430,0px 4px 20px 0px #000430;
+
+
+}
+
+.LastSection .Lastbutton .logIn{
+  position: absolute;
+  right: 150px;
+ 
+  border-radius: 8px;
+background: #FFFFFF;
+border: 2px solid #000FF0;
+box-shadow: 0px 24px 42px 0px #000430,0px 4px 20px 0px #000430;
+
+}*/
+.Lastbutton{
+  justify-content: flex;
+  padding-bottom: 0px;
+}
+.LastSection .Lastbutton{
+  /* padding-left: 780px; */
+  align-self: center;
+  width: 40% !important;
+}
+
+.LastSection .Lastbutton .Demo{
+  border-radius: 8px;
+  background: #500AD2;
+  border: 2px solid #000FF0;
+  border: 2px solid #3A008C;
+  /*linear-gradient(180deg, #FFFFFF 0%, #000000 100%);*/
+  /* box-shadow: 0px 24px 42px 0px #000430,0px 4px 20px 0px #000430; */
+}
+
+.LastSection .Lastbutton .logIn{
+  border-radius: 4px;
+  background: #FFFFFF;
+  border: 2px solid #000FF0;
+  border: 2px solid #3A008C;
+  /* box-shadow: 0px 8px 42px 0px #000430,0px 4px 20px 0px #000430; */
+}
+
+.achievedText {
+  color: #5C07D1;
+  /* font-family: IBM Plex Sans; */
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 1.26;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.caseStudy {  
+  color: #120EF0;
+  /* font-family: IBM Plex Sans; */
+  font-weight: 500;
+  /* font-size: 24px; */
+  /* line-height: normal;
+  letter-spacing: 0px; */
+  text-align: left;
+  white-space: pre;
+  height: 100%;
+  margin: 0;
+  width: 20%;
+  /* padding-left: 40px; */
+  /* padding-bottom: 32px; */
+}
+
+.nathan {
+  color: #5C07D1;
+  /* font-family: IBM Plex Sans; */
+  font-weight: 600;
+  font-size: 16px;
+  /* line-height: 40px; */
+  letter-spacing: 0px;
+  text-align: center;
+  white-space: pre;
+  width: 100%;
+  align-self: center;
+}
+
+.sectionFourth{
+  width: 70% !important;
+}
+
+.forthSectionTestimonial {
+  width: 30% !important;
+  height: 100%;
+  text-align: center;
+}
+
+.testimonialImage {
+  width: 60% !important;
+}
+
+.LastText {
+  width: 60% !important;
+}
+
+.lastButtonLabel {
+  color: #FFFFFF;
+  /* font-family: Basis Grotesque; */
+  font-weight: medium;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  text-transform: capitalize;
+  padding: 8px;
+}
+
+.lastButtonLabel2 {
+  color: #000FF0;
+  /* font-family: Basis Grotesque; */
+  font-weight: medium;
+  /* font-size: 36px; */
+  line-height: normal;
+  letter-spacing: 0px;
+  text-align: left;  
+  padding: 8px;
+  text-transform: capitalize;
+}
+
+.section5 {
+  padding: 200px 0 100px 200px;
+}
+ 
